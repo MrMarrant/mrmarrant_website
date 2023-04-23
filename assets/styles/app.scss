@@ -1,5 +1,39 @@
 @import "bootstrap/scss/bootstrap";
 
 body {
+    color: #ffffff;
     background-color: #242222;
+}
+h1 {
+    font-size: 10rem !important;
+    //font-family: 'Futura';
+}
+h2 {
+    font-family: "Arial";
+}
+h3 {
+    text-align: center;
+}
+hr {
+    color: #ffffff;
+}
+.container-element {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.header-portfolio {
+    width: 100%;
+    height: 100vh;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.container-aboutus {
+    width: 100%;
+    height: 100vh;
+    padding-top: 10px;
+}
+.description-header {
+    padding-top: 100px;
+    padding-left: 5px;
 }
