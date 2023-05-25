@@ -58,6 +58,39 @@ a:hover {
 }
 
 // ## Projects ##
-.container {
-    background-color: aqua;
+.row {
+    --bs-gutter-x: 0rem !important;
+}
+
+.title-project {
+    padding-bottom: 5rem;
+}
+
+.list-projects {
+    margin-left: 30%;
+}
+
+.project-card-hearder {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    display: flex;
+}
+
+.link-project {
+    margin-left: 45%;
+    margin-top: 5%;
+}
+
+.steam,.github {
+    width: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.icon {
+    width: 3.5rem;
+}
+
+.project-text-footer {
+    color: rgb(88 0 0);
+    font-weight: bold;
 }
