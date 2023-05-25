@@ -1,5 +1,6 @@
 @import "bootstrap/scss/bootstrap";
 
+// ## PortFolio ##
 body {
     color: #efe8e8;
     background-color: #242222;
@@ -23,4 +24,40 @@ section {
     min-height: 100vh;
     padding-left: 20px;
     padding-top: 10px;
+}
+
+// ## AboutUs ##
+.title-aboutus {
+    padding-left: 20px;
+}
+
+.description-about {
+    padding-top: 50px;
+    font-size:25px;
+    font-family: "Arial";
+}
+
+a {
+    color: #efe8e8;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #dc8100;
+    text-decoration: none;
+}
+
+.photo {
+    width: 300px;
+}
+
+// ## Header ##
+.description-header {
+    padding-top: 100px;
+    padding-left: 5px;
+}
+
+// ## Projects ##
+.container {
+    background-color: aqua;
 }
