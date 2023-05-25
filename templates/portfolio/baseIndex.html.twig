@@ -6,7 +6,6 @@
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
-            {{ encore_entry_script_tags('portfolio') }}
         {% endblock %}
 
         {% block javascripts %}
@@ -16,13 +15,17 @@
     </head>
     <body>
         {% block body %}
-            <div class="container-element">
+            <section>
                 {% include '/portfolio/header.html.twig' %}
-            </div>
+            </section>
             <hr>
-            <div class="container-element">
+            <section>
                 {% include '/portfolio/aboutUs.html.twig' %}
-            </div>
+            </section>
+            <hr>
+            <section>
+                {% include '/portfolio/projects.html.twig' %}
+            </section>
         {% endblock %}
     </body>
 </html>

@@ -1,3 +1,30 @@
-<div class="container-aboutus">
-    <h3> A propos </h3>
+{% block stylesheets %}
+    {{ encore_entry_link_tags('aboutUs') }}
+{% endblock %}
+
+<div class="title-aboutus">
+    <p class="h1"> A propos </p>
 </div>
+<div class="description-about">
+    <div class="container px-4 text-center">
+        <div class="row gx-5">
+            <div class="col">
+                    <p class= "short-description">
+                        Je me présente, MrMarrant, j'ai la vingtaine, je termine ma dernière année de master en Informatique et je me considère actuellement 
+                        comme développeur Full Stack en Web et Mobile.
+                    </p>
+                    <p class= "short-description">
+                        J'ai commencé par des études de médecine, et la vie étant très étrange par moments, j'en suis arrivé à faire du web le jour, 
+                        et des mods avec des bruits de <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2956796515">clowns</a> la nuit.
+                    </p>
+                    <p class= "short-description">
+                        Je crée essentiellement des mods et autres petites création sur mon temps libre, principalement sur le jeu Garry's Mod.<br>
+                        Mais dû à mes activités professionnelles, je réalise quelques sites web, que ça soit sur la partie backend ou frontend.
+                    </p>
+            </div>
+            <div class="col">
+                    <img class= "photo" src={{asset('images/mrmarrant_pdp.png')}} class="rounded mx-auto d-block" alt="...">
+            </div>
+        </div>
+    </div>
+<div>
