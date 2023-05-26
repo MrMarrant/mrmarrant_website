@@ -3,9 +3,10 @@
 		Mes Projets
 	</h1>
 </div>
+{# TODO : Tranformer ça en boucle et get les données depuis le controlleur, faire des enums contenant les projets ou les stockés dans un json #}
 <div class="list-projects">
 	<div class="row">
-		<div class="card text-white bg-secondary mb-3" style="max-width: 18rem; margin-right: 5rem;">
+		<div class="card text-white bg-secondary mb-5" style="max-width: 18rem; margin-right: 5rem;">
 			<div class="project-card-hearder">
 				<img class="icon" src={{asset('images/disk.svg')}} class="rounded mx-auto d-block" alt="...">
 				<div class="link-project">
@@ -16,14 +17,14 @@
 			<div class="card-body">
 				<h4 class="card-title">SCP-235</h5>
 				<p class="card-text">SCP-235 appear to be shellac phonograph records of the type commonly produced in the late 1920s.
-										Each record contains a different song.
-										Its main effect is to stop in time all nearby entities whenever the record "skips".</p>
+																									Each record contains a different song.
+																									Its main effect is to stop in time all nearby entities whenever the record "skips".</p>
 			</div>
 			<div class="card-footer">
 				<p class="project-text-footer">Lua</p>
 			</div>
 		</div>
-		<div class="card text-white bg-secondary mb-3" style="max-width: 18rem; margin-right: 5rem;">
+		<div class="card text-white bg-secondary mb-5" style="max-width: 18rem; margin-right: 5rem;">
 			<div class="project-card-hearder">
 				<img class="icon" src={{asset('images/portfolio.svg')}} class="rounded mx-auto d-block" alt="...">
 				<div class="link-project">
@@ -33,10 +34,49 @@
 			<div class="card-body">
 				<h4 class="card-title">Portfolio</h5>
 				<p class="card-text">Web site realized in PHP in order to display my various contacts and realized projects.
-					I use the symfony framework, it is obvious that I could have realized this website without using the language and the framework, but I intend in a near future to use it for other features.</p>
+																				I use the symfony framework, it is obvious that I could have realized this website without using the language and the framework, but I intend in a near future to use it for other features.</p>
 			</div>
 			<div class="card-footer">
 				<p class="project-text-footer">PHP Symfony</p>
+			</div>
+		</div>
+		<div class="card text-white bg-secondary mb-5" style="max-width: 18rem; margin-right: 5rem;">
+			<div class="project-card-hearder">
+				<img class="icon" src={{asset('images/project_manager.svg')}} class="rounded mx-auto d-block" alt="...">
+			</div>
+			<div class="card-body">
+				<h4 class="card-title">Project management website</h5>
+				<p class="card-text">A site created and maintained as part of my business project, which mainly consists of managing projects and all the stages that go with them (signatures, reports, participants, budget), as well as several other modules such as vacations, invoicing and mission orders.</p>
+			</div>
+			<div class="card-footer">
+				<p class="project-text-footer">PHP Yii2</p>
+			</div>
+		</div>
+		<div class="card text-white bg-secondary mb-5" style="max-width: 18rem; margin-right: 5rem;">
+			<div class="project-card-hearder">
+				<img class="icon" src={{asset('images/poi.svg')}} class="rounded mx-auto d-block" alt="...">
+			</div>
+			<div class="card-body">
+				<h4 class="card-title">Mobile Application for a departement</h5>
+				<p class="card-text">This application allows you to retrieve points of interest on a map of a departement and observe various events and other important places with their detailed descriptions.</p>
+			</div>
+			<div class="card-footer">
+				<p class="project-text-footer">Dart Flutter</p>
+			</div>
+		</div>
+		<div class="card text-white bg-secondary mb-5" style="max-width: 18rem; margin-right: 5rem;">
+			<div class="project-card-hearder">
+				<img class="icon" src={{asset('images/aegis.svg')}} class="rounded mx-auto d-block" alt="...">
+				<div class="link-project">
+					<a href="https://www.gmodstore.com/market/view/aegis-infection"><img class="other" src={{asset('images/other.svg')}} class="rounded mx-auto d-block" alt="..."></a>
+				</div>
+			</div>
+			<div class="card-body">
+				<h4 class="card-title">Aegis Infection</h5>
+				<p class="card-text">Aegis Infection is designed to simulate a zombie infection. The addon is highly configurable via a menu accessed through a command. Users can change the models of the infected players based on their job. You can specify which jobs or models are immune to infection and edit basics statistics.</p>
+			</div>
+			<div class="card-footer">
+				<p class="project-text-footer">Lua</p>
 			</div>
 		</div>
 	</div>

@@ -67,7 +67,17 @@ a:hover {
 }
 
 .list-projects {
-    margin-left: 30%;
+    left: 50%;
+}
+
+.card {
+    background-color: #656565 !important;
+}
+.card:hover {
+    transform: scale(1.1);
+    .card-title {
+        color: #dc8100;
+    }
 }
 
 .project-card-hearder {
@@ -81,7 +91,7 @@ a:hover {
     margin-top: 5%;
 }
 
-.steam,.github {
+.steam,.github, .other {
     width: 1.5rem;
     margin-left: 0.5rem;
 }
@@ -91,6 +101,6 @@ a:hover {
 }
 
 .project-text-footer {
-    color: rgb(88 0 0);
+    color: #000000;
     font-weight: bold;
 }
