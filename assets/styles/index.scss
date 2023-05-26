@@ -1,0 +1,28 @@
+// ## PortFolio ##
+body {
+    color: #efe8e8;
+    background-color: #242222;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+p {
+    text-align: center;
+    color: antiquewhite;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    font-size: 10rem !important;
+    //font-family: 'Futura';
+}
+h2 {
+    font-family: "Arial";
+}

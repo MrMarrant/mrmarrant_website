@@ -1,3 +1,5 @@
+import './styles/portfolio.scss';
+
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 window.addEventListener('load', (event) => {
     let i = 0
