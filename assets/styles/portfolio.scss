@@ -24,6 +24,14 @@ section {
     padding-top: 10px;
 }
 
+.section-link {
+    width: 100%;
+    min-height: 10vh;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
 // ## AboutUs ##
 .title-aboutus {
     padding-left: 20px;
@@ -31,7 +39,7 @@ section {
 
 .description-about {
     padding-top: 50px;
-    font-size:25px;
+    font-size: 25px;
     font-family: "Arial";
 }
 
@@ -89,7 +97,9 @@ a:hover {
     margin-top: 5%;
 }
 
-.steam,.github, .other {
+.steam,
+.github,
+.other {
     width: 1.5rem;
     margin-left: 0.5rem;
 }
@@ -101,4 +111,47 @@ a:hover {
 .project-text-footer {
     color: #000000;
     font-weight: bold;
+}
+
+// ## Links ##
+
+.description-link {
+    margin-top: 5%;
+}
+
+.container {
+    display: flex;
+}
+
+.block {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #efe8e8;
+    margin: 10px;
+    transition: all 0.7s ease;
+}
+
+.block:hover {
+    flex: 2;
+}
+
+.icon_link {
+    width: 3.5rem;
+    display: block;
+    font-size: 40px;
+}
+
+.description {
+    color: #000000;
+    display: none;
+}
+
+.block:hover {
+    background-color: #dc8100;
+}
+
+.block:hover .description {
+    display: block;
 }
