@@ -24,18 +24,16 @@
 			<section>
 				{% include '/portfolio/header.html.twig' %}
 			</section>
-			<hr>
-			<section>
+			<section style="min-height: 70vh;">
 				{% include '/portfolio/aboutUs.html.twig' %}
 			</section>
-			<hr>
 			<section>
 				{% include '/portfolio/projects.html.twig' %}
 			</section>
-			<hr>
-			<div class="section-link">
+			<section>
 				{% include '/portfolio/links.html.twig' %}
-			</div>
+			</section>
+			{% include '/portfolio/footer.html.twig' %}
 		{% endblock %}
 	</body>
 </html>

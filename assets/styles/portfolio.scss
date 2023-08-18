@@ -1,7 +1,7 @@
 // ## PortFolio ##
 body {
     color: #efe8e8;
-    background-color: #242222;
+    background-color: #4d4d4d;
 }
 h1 {
     font-size: 10rem !important;
@@ -19,9 +19,39 @@ hr {
 
 section {
     width: 100%;
-    min-height: 100vh;
+    //min-height: 100vh;
     padding-left: 20px;
     padding-top: 10px;
+
+    /*   skew adds a 4.76 degree slope and the translateY equation is based on the fact that a 4.76 degree slope has a gradient of 1:12 */
+    -webkit-transform: skew(0, -4.76deg) translateY(calc(50vw / -12));
+    -ms-transform: skew(0, -4.76deg) translateY(calc(50vw / -12));
+    transform: skew(0, -4.76deg) translateY(calc(50vw / -12));
+    /*   And finally we account for the slope to make sure each section can occupy the full window... I added 10vw just to give it a little extra padding */
+    min-height: calc(100vh - (110vw / -12));
+}
+
+/* COLORS AND OTHER STYLES TO ILLUSTRATE SECTIONS */
+section:nth-child(1) {
+    background-color: #242222;
+}
+section:nth-child(2) {
+    background-color: #4d4d4d;
+}
+section:nth-child(3) {
+    background-color: #242222;
+}
+section:nth-child(4) {
+    background-color: #4d4d4d;
+    min-height: 15vh;
+    position: relative;
+    -webkit-transform: skew(0);
+    -ms-transform: skew(0);
+    transform: skew(0);
+    margin-top: calc(100vw / -12);
+    padding-top: calc(100vw / 12);
+    z-index: -1;
+    margin-bottom: 3rem;
 }
 
 .section-link {
@@ -30,6 +60,12 @@ section {
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 40px;
+}
+
+// ## Header ##
+
+.title-portfolio {
+    margin-top: 5rem;
 }
 
 // ## AboutUs ##
@@ -55,6 +91,12 @@ a:hover {
 
 .photo {
     width: 300px;
+}
+
+.col {
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
 }
 
 // ## Header ##
@@ -116,7 +158,8 @@ a:hover {
 // ## Links ##
 
 .description-link {
-    margin-top: 5%;
+    padding-bottom: 2rem;
+    background-color: #4d4d4d;
 }
 
 .container {
