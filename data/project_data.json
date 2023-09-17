@@ -1,0 +1,22 @@
+[
+    {
+        "name" : "caca",
+        "gitURL" : "cacac",
+        "steamURL" : "caca",
+        "iconePath" : "cacac",
+        "languageCode" : [
+            "LUA"
+        ],
+        "description" : "C'est un caca"
+    },
+    {
+        "name" : "Chien",
+        "gitURL" : "Chien",
+        "steamURL" : "Chien",
+        "iconePath" : "Chien",
+        "languageCode" : [
+            "PHP"
+        ],
+        "description" : "C'est un Chien"
+    }
+]

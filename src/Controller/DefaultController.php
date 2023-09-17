@@ -18,4 +18,11 @@ class DefaultController extends AbstractController
     {
         return $this->render('portfolio/baseIndex.html.twig');
     }
+
+    #[Route('/portfolio/')]
+    public function project(string $projectName): Response
+    {
+        //TODO : Récupérer les données du projet dans le fichier json, et send les données correspondant au projet.
+        return $this->render('project/baseIndex.html.twig');
+    }
 }
