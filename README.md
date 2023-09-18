@@ -4,8 +4,12 @@
 
 ### 🧩 Config
 
-`symfony server:start` Pour lancer le serveur.<br><br>
-`npm run watch` Pour build les changements de style du serveur.
+
+```composer install``` Installer les lib composer.<br><br>
+```composer require symfony/webpack-encore-bundle``` Installer la lib encore
+```composer require symfony/dotenv``` Installer la lib dotenv
+```symfony server:start``` Pour lancer le serveur.<br><br>
+```npm run build``` Pour build les changements de style du serveur.
 
 ### Static Page
 
