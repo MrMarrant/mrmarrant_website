@@ -1,0 +1,29 @@
+body {
+    background-color: #242222;
+    -webkit-transform: skew(0, -4.76deg) translateY(calc(50vw / -12));
+    -ms-transform: skew(0, -4.76deg) translateY(calc(50vw / -12));
+    transform: skew(0, -4.76deg) translateY(calc(50vw / -12));
+    min-height: calc(100vh - (110vw / -12));
+}
+
+.header {
+    position: relative;
+    height: 80vh;
+    margin: 0;
+}
+
+h1 {
+    color: #efe8e8;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

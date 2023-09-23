@@ -123,6 +123,7 @@ a:hover {
 }
 .card:hover {
     transform: scale(1.1);
+    cursor: pointer;
     .card-title {
         color: #dc8100;
     }
@@ -172,12 +173,16 @@ a:hover {
     padding: 20px;
     border-radius: 10px;
     background-color: #efe8e8;
-    margin: 10px;
+    margin: 2px;
     transition: all 0.7s ease;
 }
 
 .block:hover {
     flex: 2;
+    background-color: #dc8100;
+    .description {
+        display: block;
+    }
 }
 
 .icon_link {
@@ -189,12 +194,4 @@ a:hover {
 .description {
     color: #000000;
     display: none;
-}
-
-.block:hover {
-    background-color: #dc8100;
-}
-
-.block:hover .description {
-    display: block;
 }

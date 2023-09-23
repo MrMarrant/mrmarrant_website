@@ -1,3 +1,14 @@
+{% block javascripts %}
+	<script>
+		function openLink(id) {
+			window.open(
+			'/project',
+			//'_blank' // <- This is what makes it open in a new window.
+			);
+		}
+	</script>
+{% endblock %}
+
 <div class="title-project">
 	<h1>
 		My Projects
@@ -6,7 +17,7 @@
 {# TODO : Tranformer ça en boucle et get les données depuis le controlleur, faire des enums contenant les projets ou les stockés dans un json #}
 <div class="list-projects">
 	<div class="row">
-		<div class="card text-white bg-secondary mb-5" style="max-width: 18rem; margin-right: 5rem;">
+		<div class="card text-white bg-secondary mb-5" style="max-width: 18rem; margin-right: 5rem;" onclick="openLink('scp235')">
 			<div class="project-card-hearder">
 				<img class="icon" src={{asset('images/disk.svg')}} class="rounded mx-auto d-block" alt="...">
 				<div class="link-project">
