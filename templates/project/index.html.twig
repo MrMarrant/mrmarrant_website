@@ -18,6 +18,13 @@
 		{% endblock %}
 	</head>
 	<body>
-		{% block body %}{% endblock %}
+		{% block body %}
+		<section>
+			{% include '/project/header.html.twig' %}
+		</section>
+		<section>
+			{% include '/project/description.html.twig' %}
+		</section>
+		{% endblock %}
 	</body>
 </html>

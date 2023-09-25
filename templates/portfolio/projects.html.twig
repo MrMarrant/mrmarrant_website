@@ -2,7 +2,7 @@
 	<script>
 		function openLink(id) {
 			window.open(
-			'/project',
+			'/project/' + id,
 			//'_blank' // <- This is what makes it open in a new window.
 			);
 		}
@@ -17,7 +17,7 @@
 {# TODO : Tranformer ça en boucle et get les données depuis le controlleur, faire des enums contenant les projets ou les stockés dans un json #}
 <div class="list-projects">
 	<div class="row">
-		<div class="card text-white bg-secondary mb-5" style="max-width: 18rem; margin-right: 5rem;" onclick="openLink('scp235')">
+		<div id="clickable" class="card text-white bg-secondary mb-5" style="max-width: 18rem; margin-right: 5rem;" onclick="openLink('scp-235')">
 			<div class="project-card-hearder">
 				<img class="icon" src={{asset('images/disk.svg')}} class="rounded mx-auto d-block" alt="...">
 				<div class="link-project">
@@ -35,7 +35,7 @@
 				<p class="project-text-footer">Lua</p>
 			</div>
 		</div>
-		<div class="card text-white bg-secondary mb-5" style="max-width: 18rem; margin-right: 5rem;">
+		<div id="clickable" class="card text-white bg-secondary mb-5" style="max-width: 18rem; margin-right: 5rem;" onclick="openLink('mrmarrant')">
 			<div class="project-card-hearder">
 				<img class="icon" src={{asset('images/portfolio.svg')}} class="rounded mx-auto d-block" alt="...">
 				<div class="link-project">
@@ -75,7 +75,7 @@
 				<p class="project-text-footer">Dart Flutter</p>
 			</div>
 		</div>
-		<div class="card text-white bg-secondary mb-5" style="max-width: 18rem; margin-right: 5rem;">
+		<div id="clickable" class="card text-white bg-secondary mb-5" style="max-width: 18rem; margin-right: 5rem;" onclick="openLink('aegis-infection')">
 			<div class="project-card-hearder">
 				<img class="icon" src={{asset('images/aegis.svg')}} class="rounded mx-auto d-block" alt="...">
 				<div class="link-project">
@@ -90,7 +90,7 @@
 				<p class="project-text-footer">Lua</p>
 			</div>
 		</div>
-		<div class="card text-white bg-secondary mb-5" style="max-width: 18rem; margin-right: 5rem;">
+		<div id="clickable" class="card text-white bg-secondary mb-5" style="max-width: 18rem; margin-right: 5rem;" onclick="openLink('project-scramble')">
 			<div class="project-card-hearder">
 				<img class="icon" src={{asset('images/goggle.svg')}} class="rounded mx-auto d-block" alt="...">
 				<div class="link-project">
@@ -107,7 +107,7 @@
 				<p class="project-text-footer">Lua</p>
 			</div>
 		</div>
-		<div class="card text-white bg-secondary mb-5" style="max-width: 18rem; margin-right: 5rem;">
+		<div id="clickable" class="card text-white bg-secondary mb-5" style="max-width: 18rem; margin-right: 5rem;" onclick="openLink('scp-035')">
 			<div class="project-card-hearder">
 				<img class="icon" src={{asset('images/mask.svg')}} class="rounded mx-auto d-block" alt="...">
 				<div class="link-project">
@@ -124,7 +124,7 @@
 				<p class="project-text-footer">Lua</p>
 			</div>
 		</div>
-		<div class="card text-white bg-secondary mb-5" style="max-width: 18rem; margin-right: 5rem;">
+		<div id="clickable" class="card text-white bg-secondary mb-5" style="max-width: 18rem; margin-right: 5rem;" onclick="openLink('real-garbage')">
 			<div class="project-card-hearder">
 				<img class="icon" src={{asset('images/garbage.svg')}} class="rounded mx-auto d-block" alt="...">
 				<div class="link-project">

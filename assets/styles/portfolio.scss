@@ -122,11 +122,14 @@ a:hover {
     background-color: #656565 !important;
 }
 .card:hover {
-    transform: scale(1.1);
-    cursor: pointer;
     .card-title {
         color: #dc8100;
     }
+}
+
+#clickable:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .project-card-hearder {

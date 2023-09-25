@@ -26,7 +26,9 @@ class DefaultController extends AbstractController
         $query = DataHelper::getQuery($name);
         if ($query == NULL) return $this->render('project/error.html.twig');
 
-        //TODO : Récupérer les données du projet dans le fichier json, et send les données correspondant au projet.
-        return $this->render('project/base.html.twig');
+        return $this->render('project/index.html.twig',
+        [
+            "query" => $query,
+        ]);
     }
 }

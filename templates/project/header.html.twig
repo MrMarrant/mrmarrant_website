@@ -1,0 +1,21 @@
+<div class="title">
+	<h1>Projet {{ query.name }}</h1>
+</div>
+<div class="detailed">
+    <div class="col">
+        <img class="photo" src={{asset(query.iconePath)}} class="rounded mx-auto d-block" alt="...">
+    </div>
+
+    <div class="info">
+        <div class="row">
+            <div class="col">
+                <span style="color: #FF914D;">> </span><span> Language : </span><span style="color: #FF914D;font-weight: bold;">{{ query.languageCode }}</span><br><br>
+                <span style="color: #FF914D;">> </span><span> Release Date : </span><span style="color: #FF914D;font-weight: bold;">{{ query.releaseDate }}</span><br><br>
+                <a> <span style="color: #FF914D;">> </span>Source Code : </a><br>
+                • <a class="customLink" href={{ query.gitURL }}>{{ query.gitURL }}</a><br><br>
+                <span style="color: #FF914D;">> </span><span> Other Links : </span><br>
+                • <a class="customLink" href={{ query.otherUrl.steam }}>Steam</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,22 +1,26 @@
 [
     {
-        "name" : "caca",
-        "gitURL" : "cacac",
-        "steamURL" : "caca",
-        "iconePath" : "cacac",
-        "languageCode" : [
-            "LUA"
-        ],
-        "description" : "C'est un caca"
+        "name" : "SCP-235",
+        "gitURL" : "https://github.com/MrMarrant/SCP-235",
+        "otherUrl" : {
+            "steam" : "https://steamcommunity.com/sharedfiles/filedetails/?id=2980228292"
+        },
+        "iconePath" : "images/scp-035.gif",
+        "languageCode" : "LUA",
+        "releaseDate" : "2023-30-07",
+        "short_description" : "SCP-235 appear to be shellac phonograph records of the type commonly produced in the late 1920s.",
+        "long_description" : "C'est un caca"
     },
     {
         "name" : "Chien",
         "gitURL" : "Chien",
-        "steamURL" : "Chien",
-        "iconePath" : "Chien",
-        "languageCode" : [
-            "PHP"
+        "otherUrl" : [
+            "trhrthrhrr"
         ],
-        "description" : "C'est un Chien"
+        "iconePath" : "Chien",
+        "languageCode" : "PHP | HTML | CSS",
+        "releaseDate" : "2018-01-01",
+        "shortDescription" : "C'est un Chien",
+        "longDescription" : "C'est un Chien"
     }
 ]
