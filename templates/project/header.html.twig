@@ -12,9 +12,16 @@
                 <span style="color: #FF914D;">> </span><span> Language : </span><span style="color: #FF914D;font-weight: bold;">{{ query.languageCode }}</span><br><br>
                 <span style="color: #FF914D;">> </span><span> Release Date : </span><span style="color: #FF914D;font-weight: bold;">{{ query.releaseDate }}</span><br><br>
                 <a> <span style="color: #FF914D;">> </span>Source Code : </a><br>
-                • <a class="customLink" href={{ query.gitURL }}>{{ query.gitURL }}</a><br><br>
+                {% if query.gitURL %}
+                    • <a class="customLink" href={{ query.gitURL }}>{{ query.gitURL }}</a><br><br>
+                {% endif %}
                 <span style="color: #FF914D;">> </span><span> Other Links : </span><br>
-                • <a class="customLink" href={{ query.otherUrl.steam }}>Steam</a>
+                {% if query.otherUrl.steam %}
+                    • <a class="customLink" href={{ query.otherUrl.steam }}>Steam</a>
+                {% endif %}
+                {% if query.otherUrl.gmodstore %}
+                    • <a class="customLink" href={{ query.otherUrl.gmodstore }}>Gmod Store</a>
+                {% endif %}
             </div>
         </div>
     </div>

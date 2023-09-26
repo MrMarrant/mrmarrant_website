@@ -19,6 +19,7 @@
 	</head>
 	<body>
 		{% block body %}
+		<a href="/portfolio"><img class="home" src={{asset('images/home.svg')}} class="rounded mx-auto d-block" alt="..."></a>
 		<section>
 			{% include '/project/header.html.twig' %}
 		</section>
@@ -26,5 +27,6 @@
 			{% include '/project/description.html.twig' %}
 		</section>
 		{% endblock %}
+		<img id="arrow" src={{asset('images/arrow.svg')}} class="rounded mx-auto d-block" alt="...">
 	</body>
 </html>

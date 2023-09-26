@@ -3,7 +3,7 @@
 		function openLink(id) {
 			window.open(
 			'/project/' + id,
-			//'_blank' // <- This is what makes it open in a new window.
+			'_self'
 			);
 		}
 	</script>
@@ -35,7 +35,7 @@
 				<p class="project-text-footer">Lua</p>
 			</div>
 		</div>
-		<div id="clickable" class="card text-white bg-secondary mb-5" style="max-width: 18rem; margin-right: 5rem;" onclick="openLink('mrmarrant')">
+		<div id="clickable" class="card text-white bg-secondary mb-5" style="max-width: 18rem; margin-right: 5rem;" onclick="openLink('portfolio')">
 			<div class="project-card-hearder">
 				<img class="icon" src={{asset('images/portfolio.svg')}} class="rounded mx-auto d-block" alt="...">
 				<div class="link-project">
