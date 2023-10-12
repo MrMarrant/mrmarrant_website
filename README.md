@@ -1,8 +1,8 @@
 # MrMarrant WebSite
 
-### ⚙️ Installations
+## ⚙️ Installations
 
-### 🧩 Config
+## 🧩 Config
 
 
 ```composer install``` Installer les lib composer.<br><br>
@@ -11,12 +11,25 @@
 ```symfony server:start``` Pour lancer le serveur.<br><br>
 ```npm run build``` Pour build les changements de style du serveur.
 
-### Static Page
+## Static Page
 
 Read the documentation :<br>
 https://stenopephp.github.io/Stenope/
 
 `bin/console -e prod stenope:build ./static`
+
+## Docker
+
+### Build le Container
+- docker build . -f ./docker/Dockerfile
+
+Changer le nom de l'image dans le docker-compose.yml par l'id généré par la commande précédente.
+
+- cd docker
+- docker-compose up -d
+
+### Accéder au container
+- docker run -it [id] bash
 
 ### 📌 Dépendance
 
