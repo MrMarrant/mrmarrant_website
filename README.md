@@ -31,7 +31,7 @@ Changer le nom de l'image dans le docker-compose.yml par l'id généré par la c
 ### Accéder au container
 - docker run -it [id] bash
 
-### 📌 Dépendance
+## 📌 Dépendance
 
 - PHP : 8.2 <br>
 - Symfony : 6.2 <br>

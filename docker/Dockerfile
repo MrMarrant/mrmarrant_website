@@ -1,12 +1,3 @@
-################################################################################
-# Create a final stage for running your application.
-#
-# The following commands copy the output from the "build" stage above and tell
-# the container runtime to execute it when the image is run. Ideally this stage
-# contains the minimal runtime dependencies for the application as to produce
-# the smallest image possible. This often means using a different and smaller
-# image than the one used for building the application, but for illustrative
-# purposes the "base" image is used here.
 FROM php:8.2-apache
 
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
@@ -19,7 +10,7 @@ RUN curl -sSk https://getcomposer.org/installer | php -- --disable-tls && \
 
 RUN apt update && apt install -yqq nodejs npm
 
-COPY . /var/www/
+COPY --chown=www-data:www-data . /var/www/
 
 COPY ./docker/apache.conf /etc/apache2/sites-available/000-default.conf
 
@@ -32,8 +23,8 @@ RUN cd /var/www/ && \
     composer require symfony/dotenv && \
     npm run build
 
-WORKDIR /var/www/
+USER www-data
 
-ENTRYPOINT ["bash", "./docker/docker.sh"]
+WORKDIR /var/www/
 
 EXPOSE 80
