@@ -1,0 +1,23 @@
+body {
+    background-color: #FAFF00;
+}
+
+.border-page {
+    background-color: #004aad;
+    bottom: 1%;
+    height: -webkit-fill-available;
+    left: 1%;
+    position: fixed;
+    right: 1%;
+    top: 1%;
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-page {
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}

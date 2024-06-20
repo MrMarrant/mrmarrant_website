@@ -24,6 +24,7 @@ Encore
     .addEntry('index', './assets/index.js')
     .addEntry('portfolio', './assets/portfolio.js')
     .addEntry('project', './assets/project.js')
+    .addEntry('mpnttaroi', './assets/mpnttaroi.js')
     .addEntry('error', './assets/error.js')
 
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
