@@ -1,5 +1,18 @@
+{% block javascripts %}
+	<script>
+    
+        const aboutSection = document.getElementById("AboutSection")
+
+        function ScrollToSection()
+        {
+            console.log("yomec");
+            aboutSection.scrollIntoView();
+        }
+    </script>
+{% endblock %}
+
 <div class="header-page">
-    <a>About</a>
-    <a>Demo</a>
-    <a>FAQ</a>
+    <a class="button-info" onclick="ScrollToSection()">About</a>
+    <a class="button-info" onclick="ScrollToSection()" style="padding-right: 10%;padding-left: 10%;">Demo</a>
+    <a class="button-info" onclick="ScrollToSection()">FAQ</a>
 </div>

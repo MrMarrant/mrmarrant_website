@@ -1,23 +1,87 @@
 body {
-    background-color: #FAFF00;
+    background-color: #004aad;
 }
 
 .border-page {
-    background-color: #004aad;
-    bottom: 1%;
-    height: -webkit-fill-available;
-    left: 1%;
+    display: -webkit-box;
+}
+
+.border {
     position: fixed;
-    right: 1%;
-    top: 1%;
-    width: -webkit-fill-available;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #FAFF00;
+    height: 100%;
+    width: 2%;
+}
+
+.right {
+    right: 0%;
+}
+
+.content-page {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    min-height: calc(100vh - (110vw / -12));
 }
 
 .title-page {
     color: #fff;
     font-weight: 700;
     text-align: center;
+    padding-top: 15%;
+}
+
+.header-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size:100px;
+}
+
+.button-info {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+// Button
+.button-info:hover {
+    color: #dadada;
+}
+
+.navigation-page {
+    background-image: url("/public/images/you_are_here.png");
+    background-repeat: no-repeat;
+}
+
+.about-page {
+    //background-image: url("/public/images/about_mpnttaroi.png");
+    //background-repeat: no-repeat;
+}
+
+.about-title {
+    text-decoration-color: #F7FC00;
+    color: #fff;
+    left: 30%;
+    font-size: 70px;
+    /* bottom: 1%; */
+    /* padding-right: 1%; */
+    font-weight: 700;
+    /* padding-top: 15%; */
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    padding-top: 30%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+}
+
+.about-img {
+    width: 100%;
+    z-index: -1;
 }

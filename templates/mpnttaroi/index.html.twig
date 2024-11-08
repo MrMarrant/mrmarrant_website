@@ -21,16 +21,28 @@
 	</head>
 	<body>
     	{% block body %}
-        <div class="border-page">
-            <div class="title-page"> 
-                <p style="font-size:200px;">MPNTTROI</p>
-                <p style="font-size:10px;">My Perfectly Normal Trip to a regular old Ikea</p>
-            </div>
+            <div class="border-page">
+                <div class="border left"></div>
+                <div class="content-page">
+                    <section>
+                        <div class="title-page"> 
+                            <p style="font-size:200px;">MPNTTROI</p>
+                            <p style="font-size:10px;">My Perfectly Normal Trip to a regular old Ikea</p>
+                        </div>
+                    </section>
+					<hr>
+                    <section class="navigation-page">
+                        {% include '/mpnttaroi/header.html.twig' %}
+                    </section>
 
-            <section>
-				{% include '/mpnttaroi/header.html.twig' %}
-			</section>
-        </div>
+					<section class="about-page">
+						<img class="about-img" src={{asset('images/about_mpnttaroi.png')}}>
+						<div class="position-absolute top-0 start-50 translate-middle">About MPNTTROI</div>
+    					{# <a class="about-title">About MPNTTROI</a> #}
+                    </section>
+                </div>
+                <div class="border right"></div>
+            </div>
     	{% endblock %}
 	</body>
 </html>
